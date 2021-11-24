@@ -58,3 +58,4 @@ wadllib==1.3.3
 Werkzeug==2.0.1
 SpeechRecognition==3.8.1
 pydub==0.25.1
+textblob==0.15.3
