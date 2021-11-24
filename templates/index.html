@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Template!</title>
+       <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+      <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  </head>
+
+  <body>
+
+
+        <script src="script.js"></script>
+  <script src="{{ url_for ('static', filename='js/script.js')}}"></script>
+  <script src="script.js"></script>
+
+
+<div id="navbar">
+  <a href="{{url_for('index')}}" id="logo">home</a>
+  <div id="navbar-right">
+    <a  href="{{url_for('rock')}}">rock</a>
+    <a href="{{url_for('pop')}}">pop</a>
+    <a href="{{url_for('indie')}}">indie</a>
+  </div>
+</div>
+<!--     <script src="script.js"></script> -->
+<div style="margin-top:210px;padding:15px 15px 2500px;font-size:30px">
+<div class="container-fluid">
+  <br>
+  <header>In this page you can add a song to the genre you want through the form:</header>
+<div class="center">
+
+<div>
+  <form action="/" method="POST">
+    <label for="name_of_song">Name of the song:</label>
+    <input type="text" name="name_of_song" placeholder="The name..">
+
+    <label for="name_of_artist">Name of the artist:</label>
+    <input type="text" name="name_of_artist" placeholder="The name of the artist..">
+
+    <label for="link_of_song">The link of the somg:</label>
+    <input type="text" name="link_of_song" placeholder="The link of the song">
+
+    <label for="genre">Genre:</label>
+      <select id="genre_of_song" name="genre_of_song">
+      <option value="rock"> Rock</option>
+      <option value="pop"> Pop </option>
+      <option value="indie"> indie </option>
+    </select>
+  
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</div>
+<h2>Random quote of the day:</h2>
+<h3>{{random_quote}} </h3>
+</div>
+</div>
+</body>
+</html>
+
+
+
+<!-- <style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style> -->
+
+
+
+
+
+<!--   <input list="browsers" name="genre_of_song">
+  <datalist id="browsers">
+    <option value="rock">
+    <option value="pop">
+    <option value="jazz">
+  </datalist>
+ -->
+
+
+
+<!--     <form action="/" method="POST">
+    <input type="text" name="name_of_song" placeholder="Name of the song">
+    <br>
+    <input type="text" name="name_of_artist" placeholder="Name of the artist">
+    <br>
+    <input type="text" name="link_of_song" placeholder="link of the song">
+    <br> -->
+    <!-- <input type="text" name="genre_of_song" placeholder="genre"> -->
+<!--     <p>Genre:</p>
+    <br>
+    <input type="radio" name="genre_of_song" id="rock" value="rock"> rock </input><br>
+    <input type="radio" name="genre_of_song" id="pop" value="pop"> pop </input><br>
+    <input type="radio" name="genre_of_song" id="jazz" value="jazz">jazz </input><br>
+
+
+
+    <input type="submit" value="Add song">
+</form> -->
